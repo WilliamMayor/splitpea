@@ -52,3 +52,9 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+
+splitpea/static/.webassets-cache/
+
+splitpea/static/css/.sass-cache/
+
+venv/

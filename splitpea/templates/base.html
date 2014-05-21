@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>splitpea - {% block title %}open and shared costs{% endblock %}</title>
+    {% assets "css" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}" />
+    {% endassets %}
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('home') }}">
+                <img src='http://placehold.it/150x150/' alt='splitpea logo' title='splitpea logo' />
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">HOME</a></li>
+                <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                <li><a href="{{ url_for('directory') }}">DIRECTORY</a></li>
+                <li><a href="{{ url_for('account') }}">MY ACCOUNT</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            {% if user %}
+            Hi, <a href="{{ url_for('account') }}">{{ user.name }}</a> | <a href="{{ url_for('logout') }}">logout</a>
+            {% else %}
+            <a href="{{ url_for('login') }}">login</a>
+            {% endif %}
+        </div>
+    </header>
+    <main role="main">
+
+    </main>
+    <footer>
+
+    </footer>
+    {% assets "js" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+</body>
+</html>

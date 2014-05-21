@@ -1,0 +1,31 @@
+body {
+    @include outer-container();
+}
+
+header {
+    @include span-columns(12);
+    @include pad(20px);
+    position: relative;
+    .logo {
+        @include span-columns(2 of 12);
+    }
+    nav {
+        @include span-columns(10 of 12);
+        @include omega();
+        margin-top: 120px;
+        border-bottom: 2px solid $base-border-color;
+        ul {
+            list-style-type: none;
+            li {
+                display: inline-block;
+                margin: 0 10px;
+            }
+        }
+    }
+    .login {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        text-align: right;
+    }
+}
