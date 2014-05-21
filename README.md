@@ -4,28 +4,28 @@ Share the cost of products equally across the customers. Be transparent in prici
 
 ## Tasks
 
-- [] add user accounts
-    - [] sign up
-    - [] log in
-    - [] log out
-    - [] see account page
-        - [] product
-            - [] summary
-            - [] profile
-            - [] costs
-            - [] customers
-        - [] customer
-            - [] products
-                - [] settings
-                    - [] email frequency
-                    - [] tip amount
-                    - [] leave product
-- [] add text for home page
-- [] add text for about page
-- [] create directory
-- [] create product profile
-    - [] JSON breakdown
-- [] database design
+- [ ] add user accounts
+    - [ ] sign up
+    - [ ] log in
+    - [ ] log out
+    - [ ] see account page
+        - [ ] product
+            - [ ] summary
+            - [ ] profile
+            - [ ] costs
+            - [ ] customers
+        - [ ] customer
+            - [ ] products
+                - [ ] settings
+                    - [ ] email frequency
+                    - [ ] tip amount
+                    - [ ] leave product
+- [ ] add text for home page
+- [ ] add text for about page
+- [ ] create directory
+- [ ] create product profile
+    - [ ] JSON breakdown
+- [ ] database design
     - User
         - id
         - email (required)
